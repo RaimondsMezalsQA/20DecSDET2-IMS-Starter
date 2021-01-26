@@ -10,6 +10,14 @@ public class Orders {
 	private Double value;
 	List<Items> oItems = new ArrayList<Items>();
 
+	public Orders() {
+		
+	}
+	
+	public Orders(Customer oCustomer) {
+		this.setOCustomer(oCustomer);
+	}
+	
 	public Orders(Customer oCustomer, Double value, List<Items> oItems) {
 		this.setOCustomer(oCustomer);
 		this.setValue(value);
@@ -21,6 +29,12 @@ public class Orders {
 		this.setOCustomer(oCustomer);
 		this.setValue(value);
 		this.setOItems(oItems);
+	}
+
+	public Orders(Long oid, Customer oCustomer) {
+		// TODO Auto-generated constructor stub
+		this.setOid(oid);
+		this.setOCustomer(oCustomer);
 	}
 
 	public Long getOid() {
