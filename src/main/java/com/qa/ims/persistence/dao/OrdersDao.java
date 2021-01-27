@@ -19,7 +19,14 @@ import com.qa.ims.utils.DatabaseUtilities;
 public class OrdersDao implements IDomainDao<Orders> {
 
 	public static final Logger LOGGER = LogManager.getLogger();
-	public static final ItemsDao itemsClass = new ItemsDao();
+	private ItemsDao itemsClass;
+	private CustomerDao customerClass;
+	
+	public OrdersDao(ItemsDao itemsClass, CustomerDao customerClass) {
+		super();
+		this.itemsClass = itemsClass;
+		this.customerClass = customerClass;
+	}
 
 	@Override
 	public Orders create(Orders orders) {
@@ -121,7 +128,7 @@ public class OrdersDao implements IDomainDao<Orders> {
 	public int delete(long oid) {
 		try (Connection connection = DatabaseUtilities.getInstance().getConnection();
 				Statement statement = connection.createStatement();) {
-			statement.executeUpdate("DELETE FROM orderline WHERE f_oid = " + oid);
+			//statement.executeUpdate("DELETE FROM orderline WHERE f_oid = " + oid);
 			return statement.executeUpdate(" DELETE FROM orders WHERE oid = " + oid);
 		} catch (Exception e) {
 			LOGGER.debug(e);
@@ -179,10 +186,8 @@ public class OrdersDao implements IDomainDao<Orders> {
 	public Orders modelFromResultSet(ResultSet resultSet) throws SQLException {
 		Long oid = resultSet.getLong("oid");
 		Long f_cid = resultSet.getLong("f_cid");
-		CustomerDao customerDao = new CustomerDao();
-		Customer customer = customerDao.read(f_cid);
+		Customer customer = customerClass.read(f_cid);
 		Double value = calcValue(oid);
-		;
 		Orders itemList = new Orders();
 		List<Items> oItems = itemList.getOItems();
 
