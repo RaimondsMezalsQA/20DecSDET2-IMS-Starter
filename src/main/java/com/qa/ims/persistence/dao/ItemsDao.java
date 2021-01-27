@@ -99,7 +99,7 @@ public class ItemsDao implements IDomainDao<Items> {
     public int delete(long iid) {
         try (Connection connection = DatabaseUtilities.getInstance().getConnection();
                 Statement statement = connection.createStatement();) {
-            return statement.executeUpdate("delete from items where id = " + iid);
+            return statement.executeUpdate("DELETE FROM items WHERE iid = " + iid);
         } catch (Exception e) {
             LOGGER.debug(e);
             LOGGER.error(e.getMessage());

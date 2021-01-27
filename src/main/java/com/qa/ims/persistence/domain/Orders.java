@@ -73,14 +73,11 @@ public class Orders {
 	public String toString() {
 		StringBuilder order = new StringBuilder();
 		order.append(String.format(": " + this.oid + " " + oCustomer.getFirstName() + " " + oCustomer.getSurname()));
-		if (this.oItems.isEmpty()) {
-			order.append("\n -> There are no items within this order!");
-		}else {
 			order.append(" - value of the order is = £" + this.value);
 			this.oItems.forEach(item -> {
 				order.append(item.getItemName() + ": £" + item.getPrice());
 			});
-		}
+		
 		return order.toString();
 	}
 
@@ -127,13 +124,13 @@ public class Orders {
 		return true;
 	}
 	
-	public Double totalValue() {
+	/*public Double totalValue() {
 		
 		this.oItems.forEach(item -> {
 			value += item.getPrice();
 		});
 		
 		return value;
-	}
+	}*/
 
 }
