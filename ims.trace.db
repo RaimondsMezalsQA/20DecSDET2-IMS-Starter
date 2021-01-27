@@ -1,0 +1,774 @@
+2021-01-27 11:23:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 11:23:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 11:23:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 11:23:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+SELECT * FROM customers ORDER BY id DESC LIMIT 1 [42102-200]
+2021-01-27 11:23:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 11:23:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 11:23:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 11:23:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+SELECT * FROM customers WHERE id = ? [42102-200]
+2021-01-27 11:23:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 11:23:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 11:23:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 11:23:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+SELECT * FROM customers [42102-200]
+2021-01-27 11:23:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 11:23:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 11:23:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 11:23:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO customers(first_name, surname) VALUES (?, ?) [42102-200]
+2021-01-27 11:23:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 11:23:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 11:23:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 11:23:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+DELETE FROM orders WHERE f_cid = 1 [42102-200]
+2021-01-27 11:23:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 11:23:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 11:23:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 11:23:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+UPDATE customers SET first_name = ?, surname = ? WHERE id = ? [42102-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP SCHEMA IF EXISTS 'ims'[*]"; expected "identifier"; SQL statement:
+DROP SCHEMA IF EXISTS 'ims' [42001-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+INSERT INTO `items` (`item_name`, `price`) VALUES ('bread', '13.21') [42102-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+INSERT INTO `orders` (`oid`, `f_cid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERLINE" not found; SQL statement:
+INSERT INTO `orderline` (`f_oid`, `f_iid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+SELECT * FROM customers ORDER BY id DESC LIMIT 1 [42102-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP SCHEMA IF EXISTS 'ims'[*]"; expected "identifier"; SQL statement:
+DROP SCHEMA IF EXISTS 'ims' [42001-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+INSERT INTO `items` (`item_name`, `price`) VALUES ('bread', '13.21') [42102-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+INSERT INTO `orders` (`oid`, `f_cid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERLINE" not found; SQL statement:
+INSERT INTO `orderline` (`f_oid`, `f_iid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+SELECT * FROM customers WHERE id = ? [42102-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP SCHEMA IF EXISTS 'ims'[*]"; expected "identifier"; SQL statement:
+DROP SCHEMA IF EXISTS 'ims' [42001-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+INSERT INTO `items` (`item_name`, `price`) VALUES ('bread', '13.21') [42102-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+INSERT INTO `orders` (`oid`, `f_cid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERLINE" not found; SQL statement:
+INSERT INTO `orderline` (`f_oid`, `f_iid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+SELECT * FROM customers [42102-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP SCHEMA IF EXISTS 'ims'[*]"; expected "identifier"; SQL statement:
+DROP SCHEMA IF EXISTS 'ims' [42001-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+INSERT INTO `items` (`item_name`, `price`) VALUES ('bread', '13.21') [42102-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+INSERT INTO `orders` (`oid`, `f_cid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERLINE" not found; SQL statement:
+INSERT INTO `orderline` (`f_oid`, `f_iid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO customers(first_name, surname) VALUES (?, ?) [42102-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP SCHEMA IF EXISTS 'ims'[*]"; expected "identifier"; SQL statement:
+DROP SCHEMA IF EXISTS 'ims' [42001-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+INSERT INTO `items` (`item_name`, `price`) VALUES ('bread', '13.21') [42102-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+INSERT INTO `orders` (`oid`, `f_cid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERLINE" not found; SQL statement:
+INSERT INTO `orderline` (`f_oid`, `f_iid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+DELETE FROM orders WHERE f_cid = 1 [42102-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP SCHEMA IF EXISTS 'ims'[*]"; expected "identifier"; SQL statement:
+DROP SCHEMA IF EXISTS 'ims' [42001-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+INSERT INTO `items` (`item_name`, `price`) VALUES ('bread', '13.21') [42102-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+INSERT INTO `orders` (`oid`, `f_cid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERLINE" not found; SQL statement:
+INSERT INTO `orderline` (`f_oid`, `f_iid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:27:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+UPDATE customers SET first_name = ?, surname = ? WHERE id = ? [42102-200]
+2021-01-27 11:36:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP SCHEMA IF EXISTS 'ims'[*]"; expected "identifier"; SQL statement:
+DROP SCHEMA IF EXISTS 'ims' [42001-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+INSERT INTO `items` (`item_name`, `price`) VALUES ('bread', '13.21') [42102-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+INSERT INTO `orders` (`oid`, `f_cid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERLINE" not found; SQL statement:
+INSERT INTO `orderline` (`f_oid`, `f_iid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+SELECT * FROM customers ORDER BY id DESC LIMIT 1 [42102-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP SCHEMA IF EXISTS 'ims'[*]"; expected "identifier"; SQL statement:
+DROP SCHEMA IF EXISTS 'ims' [42001-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+INSERT INTO `items` (`item_name`, `price`) VALUES ('bread', '13.21') [42102-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+INSERT INTO `orders` (`oid`, `f_cid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERLINE" not found; SQL statement:
+INSERT INTO `orderline` (`f_oid`, `f_iid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+SELECT * FROM customers WHERE id = ? [42102-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP SCHEMA IF EXISTS 'ims'[*]"; expected "identifier"; SQL statement:
+DROP SCHEMA IF EXISTS 'ims' [42001-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+INSERT INTO `items` (`item_name`, `price`) VALUES ('bread', '13.21') [42102-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+INSERT INTO `orders` (`oid`, `f_cid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERLINE" not found; SQL statement:
+INSERT INTO `orderline` (`f_oid`, `f_iid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+SELECT * FROM customers [42102-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP SCHEMA IF EXISTS 'ims'[*]"; expected "identifier"; SQL statement:
+DROP SCHEMA IF EXISTS 'ims' [42001-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+INSERT INTO `items` (`item_name`, `price`) VALUES ('bread', '13.21') [42102-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+INSERT INTO `orders` (`oid`, `f_cid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERLINE" not found; SQL statement:
+INSERT INTO `orderline` (`f_oid`, `f_iid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO customers(first_name, surname) VALUES (?, ?) [42102-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP SCHEMA IF EXISTS 'ims'[*]"; expected "identifier"; SQL statement:
+DROP SCHEMA IF EXISTS 'ims' [42001-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+INSERT INTO `items` (`item_name`, `price`) VALUES ('bread', '13.21') [42102-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+INSERT INTO `orders` (`oid`, `f_cid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERLINE" not found; SQL statement:
+INSERT INTO `orderline` (`f_oid`, `f_iid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+DELETE FROM orders WHERE f_cid = 1 [42102-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP SCHEMA IF EXISTS 'ims'[*]"; expected "identifier"; SQL statement:
+DROP SCHEMA IF EXISTS 'ims' [42001-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+INSERT INTO `items` (`item_name`, `price`) VALUES ('bread', '13.21') [42102-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+INSERT INTO `orders` (`oid`, `f_cid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERLINE" not found; SQL statement:
+INSERT INTO `orderline` (`f_oid`, `f_iid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:36:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+UPDATE customers SET first_name = ?, surname = ? WHERE id = ? [42102-200]
+2021-01-27 11:56:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP SCHEMA IF EXISTS 'ims'[*]"; expected "identifier"; SQL statement:
+DROP SCHEMA IF EXISTS 'ims' [42001-200]
+2021-01-27 11:56:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 11:56:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 11:56:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 11:56:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+INSERT INTO `items` (`item_name`, `price`) VALUES ('bread', '13.21') [42102-200]
+2021-01-27 11:56:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+INSERT INTO `orders` (`oid`, `f_cid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:56:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERLINE" not found; SQL statement:
+INSERT INTO `orderline` (`f_oid`, `f_iid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:56:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+SELECT * FROM customers ORDER BY id DESC LIMIT 1 [42102-200]
+2021-01-27 11:56:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP SCHEMA IF EXISTS 'ims'[*]"; expected "identifier"; SQL statement:
+DROP SCHEMA IF EXISTS 'ims' [42001-200]
+2021-01-27 11:56:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 11:56:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 11:56:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 11:56:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+INSERT INTO `items` (`item_name`, `price`) VALUES ('bread', '13.21') [42102-200]
+2021-01-27 11:56:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+INSERT INTO `orders` (`oid`, `f_cid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:56:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERLINE" not found; SQL statement:
+INSERT INTO `orderline` (`f_oid`, `f_iid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+SELECT * FROM customers WHERE id = ? [42102-200]
+2021-01-27 11:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP SCHEMA IF EXISTS 'ims'[*]"; expected "identifier"; SQL statement:
+DROP SCHEMA IF EXISTS 'ims' [42001-200]
+2021-01-27 11:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 11:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 11:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 11:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+INSERT INTO `items` (`item_name`, `price`) VALUES ('bread', '13.21') [42102-200]
+2021-01-27 11:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+INSERT INTO `orders` (`oid`, `f_cid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERLINE" not found; SQL statement:
+INSERT INTO `orderline` (`f_oid`, `f_iid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+SELECT * FROM customers [42102-200]
+2021-01-27 11:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP SCHEMA IF EXISTS 'ims'[*]"; expected "identifier"; SQL statement:
+DROP SCHEMA IF EXISTS 'ims' [42001-200]
+2021-01-27 11:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 11:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 11:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 11:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+INSERT INTO `items` (`item_name`, `price`) VALUES ('bread', '13.21') [42102-200]
+2021-01-27 11:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+INSERT INTO `orders` (`oid`, `f_cid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERLINE" not found; SQL statement:
+INSERT INTO `orderline` (`f_oid`, `f_iid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO customers(first_name, surname) VALUES (?, ?) [42102-200]
+2021-01-27 11:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP SCHEMA IF EXISTS 'ims'[*]"; expected "identifier"; SQL statement:
+DROP SCHEMA IF EXISTS 'ims' [42001-200]
+2021-01-27 11:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 11:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 11:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 11:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+INSERT INTO `items` (`item_name`, `price`) VALUES ('bread', '13.21') [42102-200]
+2021-01-27 11:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+INSERT INTO `orders` (`oid`, `f_cid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERLINE" not found; SQL statement:
+INSERT INTO `orderline` (`f_oid`, `f_iid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+DELETE FROM orders WHERE f_cid = 1 [42102-200]
+2021-01-27 11:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP SCHEMA IF EXISTS 'ims'[*]"; expected "identifier"; SQL statement:
+DROP SCHEMA IF EXISTS 'ims' [42001-200]
+2021-01-27 11:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 11:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 11:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 11:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+INSERT INTO `items` (`item_name`, `price`) VALUES ('bread', '13.21') [42102-200]
+2021-01-27 11:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+INSERT INTO `orders` (`oid`, `f_cid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERLINE" not found; SQL statement:
+INSERT INTO `orderline` (`f_oid`, `f_iid`) VALUES ('1', '1') [42102-200]
+2021-01-27 11:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+UPDATE customers SET first_name = ?, surname = ? WHERE id = ? [42102-200]
+2021-01-27 12:28:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP SCHEMA IF EXISTS 'ims'[*]"; expected "identifier"; SQL statement:
+DROP SCHEMA IF EXISTS 'ims' [42001-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+INSERT INTO `items` (`item_name`, `price`) VALUES ('bread', '13.21') [42102-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+INSERT INTO `orders` (`oid`, `f_cid`) VALUES ('1', '1') [42102-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERLINE" not found; SQL statement:
+INSERT INTO `orderline` (`f_oid`, `f_iid`) VALUES ('1', '1') [42102-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+SELECT * FROM customers ORDER BY id DESC LIMIT 1 [42102-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP SCHEMA IF EXISTS 'ims'[*]"; expected "identifier"; SQL statement:
+DROP SCHEMA IF EXISTS 'ims' [42001-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+INSERT INTO `items` (`item_name`, `price`) VALUES ('bread', '13.21') [42102-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+INSERT INTO `orders` (`oid`, `f_cid`) VALUES ('1', '1') [42102-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERLINE" not found; SQL statement:
+INSERT INTO `orderline` (`f_oid`, `f_iid`) VALUES ('1', '1') [42102-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+SELECT * FROM customers WHERE id = ? [42102-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP SCHEMA IF EXISTS 'ims'[*]"; expected "identifier"; SQL statement:
+DROP SCHEMA IF EXISTS 'ims' [42001-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+INSERT INTO `items` (`item_name`, `price`) VALUES ('bread', '13.21') [42102-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+INSERT INTO `orders` (`oid`, `f_cid`) VALUES ('1', '1') [42102-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERLINE" not found; SQL statement:
+INSERT INTO `orderline` (`f_oid`, `f_iid`) VALUES ('1', '1') [42102-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+SELECT * FROM customers [42102-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP SCHEMA IF EXISTS 'ims'[*]"; expected "identifier"; SQL statement:
+DROP SCHEMA IF EXISTS 'ims' [42001-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+INSERT INTO `items` (`item_name`, `price`) VALUES ('bread', '13.21') [42102-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+INSERT INTO `orders` (`oid`, `f_cid`) VALUES ('1', '1') [42102-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERLINE" not found; SQL statement:
+INSERT INTO `orderline` (`f_oid`, `f_iid`) VALUES ('1', '1') [42102-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO customers(first_name, surname) VALUES (?, ?) [42102-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP SCHEMA IF EXISTS 'ims'[*]"; expected "identifier"; SQL statement:
+DROP SCHEMA IF EXISTS 'ims' [42001-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+INSERT INTO `items` (`item_name`, `price`) VALUES ('bread', '13.21') [42102-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+INSERT INTO `orders` (`oid`, `f_cid`) VALUES ('1', '1') [42102-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERLINE" not found; SQL statement:
+INSERT INTO `orderline` (`f_oid`, `f_iid`) VALUES ('1', '1') [42102-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+DELETE FROM orders WHERE f_cid = 1 [42102-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP SCHEMA IF EXISTS 'ims'[*]"; expected "identifier"; SQL statement:
+DROP SCHEMA IF EXISTS 'ims' [42001-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "			CREATE TABLE IF NOT EXISTS `IMS`.`ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+			CREATE TABLE IF NOT EXISTS `ims`.`orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+INSERT INTO `items` (`item_name`, `price`) VALUES ('bread', '13.21') [42102-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+INSERT INTO `orders` (`oid`, `f_cid`) VALUES ('1', '1') [42102-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERLINE" not found; SQL statement:
+INSERT INTO `orderline` (`f_oid`, `f_iid`) VALUES ('1', '1') [42102-200]
+2021-01-27 12:28:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+UPDATE customers SET first_name = ?, surname = ? WHERE id = ? [42102-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "		CREATE TABLE IF NOT EXISTS `IMS`.`ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+		CREATE TABLE IF NOT EXISTS `ims`.`orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "		CREATE TABLE IF NOT EXISTS `IMS`.`ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+		CREATE TABLE IF NOT EXISTS `ims`.`orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+INSERT INTO `items` (`item_name`, `price`) VALUES ('bread', '13.21') [42102-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+INSERT INTO `orders` (`oid`, `f_cid`) VALUES ('1', '1') [42102-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERLINE" not found; SQL statement:
+INSERT INTO `orderline` (`f_oid`, `f_iid`) VALUES ('1', '1') [42102-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+SELECT * FROM customers ORDER BY id DESC LIMIT 1 [42102-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "		CREATE TABLE IF NOT EXISTS `IMS`.`ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+		CREATE TABLE IF NOT EXISTS `ims`.`orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "		CREATE TABLE IF NOT EXISTS `IMS`.`ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+		CREATE TABLE IF NOT EXISTS `ims`.`orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+INSERT INTO `items` (`item_name`, `price`) VALUES ('bread', '13.21') [42102-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+INSERT INTO `orders` (`oid`, `f_cid`) VALUES ('1', '1') [42102-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERLINE" not found; SQL statement:
+INSERT INTO `orderline` (`f_oid`, `f_iid`) VALUES ('1', '1') [42102-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+SELECT * FROM customers WHERE id = ? [42102-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "		CREATE TABLE IF NOT EXISTS `IMS`.`ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+		CREATE TABLE IF NOT EXISTS `ims`.`orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "		CREATE TABLE IF NOT EXISTS `IMS`.`ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+		CREATE TABLE IF NOT EXISTS `ims`.`orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+INSERT INTO `items` (`item_name`, `price`) VALUES ('bread', '13.21') [42102-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+INSERT INTO `orders` (`oid`, `f_cid`) VALUES ('1', '1') [42102-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERLINE" not found; SQL statement:
+INSERT INTO `orderline` (`f_oid`, `f_iid`) VALUES ('1', '1') [42102-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+SELECT * FROM customers [42102-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "		CREATE TABLE IF NOT EXISTS `IMS`.`ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+		CREATE TABLE IF NOT EXISTS `ims`.`orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "		CREATE TABLE IF NOT EXISTS `IMS`.`ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+		CREATE TABLE IF NOT EXISTS `ims`.`orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+INSERT INTO `items` (`item_name`, `price`) VALUES ('bread', '13.21') [42102-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+INSERT INTO `orders` (`oid`, `f_cid`) VALUES ('1', '1') [42102-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERLINE" not found; SQL statement:
+INSERT INTO `orderline` (`f_oid`, `f_iid`) VALUES ('1', '1') [42102-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO customers(first_name, surname) VALUES (?, ?) [42102-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "		CREATE TABLE IF NOT EXISTS `IMS`.`ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+		CREATE TABLE IF NOT EXISTS `ims`.`orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "		CREATE TABLE IF NOT EXISTS `IMS`.`ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+		CREATE TABLE IF NOT EXISTS `ims`.`orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+INSERT INTO `items` (`item_name`, `price`) VALUES ('bread', '13.21') [42102-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+INSERT INTO `orders` (`oid`, `f_cid`) VALUES ('1', '1') [42102-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERLINE" not found; SQL statement:
+INSERT INTO `orderline` (`f_oid`, `f_iid`) VALUES ('1', '1') [42102-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+DELETE FROM orders WHERE f_cid = 1 [42102-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "		CREATE TABLE IF NOT EXISTS `IMS`.`ORDERS` (    `OID` INT(11) NOT NULL AUTO_INCREMENT,    `F_CID` INT(11) DEFAULT (0),    PRIMARY KEY (`OID`),    FOREIGN KEY (`F_CID`) REFERENCES CUSTOMERS ('id'[*])	)"; expected "identifier"; SQL statement:
+		CREATE TABLE IF NOT EXISTS `ims`.`orders` (    `oid` INT(11) NOT NULL AUTO_INCREMENT,    `f_cid` INT(11) DEFAULT (0),    PRIMARY KEY (`oid`),    FOREIGN KEY (`f_cid`) REFERENCES customers ('id')	) [42001-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "		CREATE TABLE IF NOT EXISTS `IMS`.`ORDERLINE` (    `F_OID` INT(11),    `F_IID` INT(11),    FOREIGN KEY (`F_OID`) REFERENCES ORDERS ('oid'[*]),    FOREIGN KEY (`F_IID`) REFERENCES ITEMS ('iid')	)"; expected "identifier"; SQL statement:
+		CREATE TABLE IF NOT EXISTS `ims`.`orderline` (    `f_oid` INT(11),    `f_iid` INT(11),    FOREIGN KEY (`f_oid`) REFERENCES orders ('oid'),    FOREIGN KEY (`f_iid`) REFERENCES items ('iid')	) [42001-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+INSERT INTO `customers` (`first_name`, `surname`) VALUES ('jordan', 'harrison') [42102-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+INSERT INTO `items` (`item_name`, `price`) VALUES ('bread', '13.21') [42102-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERS" not found; SQL statement:
+INSERT INTO `orders` (`oid`, `f_cid`) VALUES ('1', '1') [42102-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERLINE" not found; SQL statement:
+INSERT INTO `orderline` (`f_oid`, `f_iid`) VALUES ('1', '1') [42102-200]
+2021-01-27 12:29:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMERS" not found; SQL statement:
+UPDATE customers SET first_name = ?, surname = ? WHERE id = ? [42102-200]
