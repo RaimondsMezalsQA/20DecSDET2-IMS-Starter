@@ -21,7 +21,6 @@ CREATE TABLE IF NOT EXISTS `ims`.`customers` (
 	CREATE TABLE IF NOT EXISTS `ims`.`orders` (
     `oid` INT(11) NOT NULL AUTO_INCREMENT,
     `f_cid` INT(11) DEFAULT (0),
-    `date_placed` DATE,
     PRIMARY KEY (`oid`),
     FOREIGN KEY (`f_cid`) REFERENCES customers (id)
 	);
