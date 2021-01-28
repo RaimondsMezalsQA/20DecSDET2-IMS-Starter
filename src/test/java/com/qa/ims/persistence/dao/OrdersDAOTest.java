@@ -64,7 +64,7 @@ public class OrdersDAOTest {
     	listItems.add(new Items(1L, "bread", 13.21));
     	Double value = 26.42;
     	testOrders = (new Orders(1L, cust, value, listItems));
-    	assertEquals(testOrders.toString(), DAO.AddOrderItem(testOrders, 1L, 1L).toString());
+    	assertEquals(testOrders.toString(), DAO.AddOrderItem(1L, 1L).toString());
     }
     
     @Test

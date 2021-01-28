@@ -32,7 +32,8 @@ public class OrdersDao implements IDomainDao<Orders> {
 	public Orders create(Orders orders) {
 		try (Connection connection = DatabaseUtilities.getInstance().getConnection();
 				PreparedStatement statement = connection.prepareStatement(
-						"INSERT INTO orders(f_cid) VALUES (" + orders.getOCustomer().getId() + ")");) {
+						"INSERT INTO orders(f_cid) VALUES (?)");) {
+			statement.setDouble(1, orders.getOCustomer().getId());
 			statement.executeUpdate();
 			return readLatest();
 		} catch (Exception e) {
@@ -126,7 +127,7 @@ public class OrdersDao implements IDomainDao<Orders> {
 		return 0;
 	}
 
-	public Orders AddOrderItem(Orders orders, Long oid, Long iid) {
+	public Orders AddOrderItem(Long oid, Long iid) {
 
 		try (Connection connection = DatabaseUtilities.getInstance().getConnection();
 				PreparedStatement statement = connection

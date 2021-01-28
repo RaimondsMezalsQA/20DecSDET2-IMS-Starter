@@ -61,8 +61,7 @@ public class OrdersController implements ICrudController<Orders> {
         {
         	LOGGER.info("Please enter an item id that you would like to add to this order");
             Long f_iid = javaUtilities.getLong();
-        	Orders orders = ordersDao.AddOrderItem(null, oid, f_iid);
-        	return orders;
+        	return ordersDao.AddOrderItem(oid, f_iid);
         }else if(choice.equals("remove")) {
         	LOGGER.info("Please enter an item id that you would like to remove from this order");
         	Long f_iid = javaUtilities.getLong();
