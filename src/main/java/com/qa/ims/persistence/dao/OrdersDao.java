@@ -111,24 +111,13 @@ public class OrdersDao implements IDomainDao<Orders> {
 
 	@Override
 	public Orders update(Orders orders) {
-		try (Connection connection = DatabaseUtilities.getInstance().getConnection();
-				PreparedStatement statement = connection
-						.prepareStatement("UPDATE orderline SET f_cid = ? WHERE oid = ?");) {
-			statement.setLong(1, orders.getOCustomer().getId());
-			statement.executeUpdate();
-			return read(orders.getOid());
-		} catch (Exception e) {
-			LOGGER.debug(e);
-			LOGGER.error(e.getMessage());
-		}
 		return null;
-	}
+		}
 
 	@Override
 	public int delete(long oid) {
 		try (Connection connection = DatabaseUtilities.getInstance().getConnection();
 				Statement statement = connection.createStatement();) {
-			//statement.executeUpdate("DELETE FROM orderline WHERE f_oid = " + oid);
 			return statement.executeUpdate(" DELETE FROM orders WHERE oid = " + oid);
 		} catch (Exception e) {
 			LOGGER.debug(e);
