@@ -7,7 +7,7 @@ public class Orders {
 
 	private Long oid;
 	private Customer oCustomer;
-	private Double value;
+	private Double value = 0.0;
 	List<Items> oItems = new ArrayList<Items>();
 
 	public Orders() {
@@ -73,9 +73,6 @@ public class Orders {
 	public String toString() {
 		StringBuilder order = new StringBuilder();
 		order.append(String.format(": " + this.oid + " " + oCustomer.getFirstName() + " " + oCustomer.getSurname()));
-			this.oItems.forEach(item -> {
-				order.append(item.getItemName() + ": £" + item.getPrice());
-			});
 			order.append(" - value of the order is = £" + this.getValue());
 		return order.toString();
 	}
