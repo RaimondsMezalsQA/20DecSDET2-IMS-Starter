@@ -28,13 +28,21 @@ As for the database you could either use Google Cloud Platform or a local instan
 A step by step series of examples that tell you how to get a development env running
 
 To set up a development environment for this project you would need to use an IDE such as Eclipse. The first thing to do would be to import the project within the IDE.
+
+
 ![](https://raw.githubusercontent.com/RaimondsMezalsQA/20DecSDET2-IMS-Starter/IMS-37_Documentation/pictures_for_readme/1_Importing_Project.png)
+ 
  
 After this the project is ready for development. During this stage you can run both the runner which would run the whole program and the tests for the system.
  
+ 
 ![](https://raw.githubusercontent.com/RaimondsMezalsQA/20DecSDET2-IMS-Starter/IMS-37_Documentation/pictures_for_readme/2_Running_Java_Application.png)
+
+
 To run the program itself you would need to right click the runner and run it as a java application.
 This is an example of a program being run within the IDE.
+
+
 ![](https://raw.githubusercontent.com/RaimondsMezalsQA/20DecSDET2-IMS-Starter/IMS-37_Documentation/pictures_for_readme/3_Running_Program_Example.png)
  
 
@@ -42,6 +50,8 @@ This is an example of a program being run within the IDE.
 
  
 ![](https://raw.githubusercontent.com/RaimondsMezalsQA/20DecSDET2-IMS-Starter/IMS-37_Documentation/pictures_for_readme/4_Coverage_As.png)
+
+
 To run the tests, you need to right click the test folder, press coverage as and run as a Junit test.
 
 ### Unit Tests 
@@ -50,10 +60,14 @@ The purpose of unit tests is to test some of the smaller units of the program. T
 
  
 ![](https://raw.githubusercontent.com/RaimondsMezalsQA/20DecSDET2-IMS-Starter/IMS-37_Documentation/pictures_for_readme/5_Orders_Test.png)
+
+
 This is an example of a test which purpose is to check if a certain class in this case the Orders class is being run in the first place.
 
  
 ![](https://raw.githubusercontent.com/RaimondsMezalsQA/20DecSDET2-IMS-Starter/IMS-37_Documentation/pictures_for_readme/6_OrdersDao_Test.png)
+
+
 This is another example of unit test’s being run. In this case they are testing the methods within the OrdersDao class. It tests the functionality of all methods such as create, read, delete, etc.
 
 ## Deployment
