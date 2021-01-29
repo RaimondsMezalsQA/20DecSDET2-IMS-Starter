@@ -25,7 +25,7 @@ public class CustomerDao implements IDomainDao<Customer> {
                         .prepareStatement("INSERT INTO customers(first_name, surname) VALUES (?, ?)");) {
             statement.setString(1, customer.getFirstName());
             statement.setString(2, customer.getSurname());
-            statement.executeUpdate("");
+            statement.executeUpdate();
             return readLatest();
         } catch (Exception e) {
             LOGGER.debug(e);
@@ -44,7 +44,7 @@ public class CustomerDao implements IDomainDao<Customer> {
         } catch (Exception e) {
             LOGGER.debug(e);
             LOGGER.error(e.getMessage());
-        }
+        } 
         return null;
     }
 
@@ -99,7 +99,7 @@ public class CustomerDao implements IDomainDao<Customer> {
     public int delete(long id) {
         try (Connection connection = DatabaseUtilities.getInstance().getConnection();
                 Statement statement = connection.createStatement();) {
-            return statement.executeUpdate("delete from customers where id = " + id);
+            return statement.executeUpdate("DELETE FROM customers WHERE id = " + id);
         } catch (Exception e) {
             LOGGER.debug(e);
             LOGGER.error(e.getMessage());
