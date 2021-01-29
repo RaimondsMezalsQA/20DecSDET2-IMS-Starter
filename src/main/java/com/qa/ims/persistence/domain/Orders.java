@@ -8,7 +8,7 @@ public class Orders {
 	private Long oid;
 	private Customer oCustomer;
 	private Double value = 0.0;
-	List<Items> oItems = new ArrayList<Items>();
+	List<Items> oItems = new ArrayList<>();
 
 	public Orders() {
 		
@@ -32,7 +32,6 @@ public class Orders {
 	}
 
 	public Orders(Long oid, Customer oCustomer) {
-		// TODO Auto-generated constructor stub
 		this.setOid(oid);
 		this.setOCustomer(oCustomer);
 	}
